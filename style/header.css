@@ -11,10 +11,15 @@
     padding: 1em;
 }
 
-.llista-menu {
+.lista-menu {
+    color: var(--laranja);
     display: none;
     position: absolute;
     top: 100%;
+}
+.lista-menu__titulo,.lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
 }
 .conteiner__butao:checked ~ .llista-menu {
     display: block;
