@@ -16,11 +16,24 @@
     display: none;
     position: absolute;
     top: 100%;
+    width: 60vw;
 }
-.lista-menu__titulo,.lista-menu__item {
+.lista-menu__titulo,
+.lista-menu__item {
     padding: 1em;
     background-color: var(--branco);
 }
-.conteiner__butao:checked ~ .llista-menu {
-    display: block;
+.conteiner__butao:checked ~ .lista-menu {
+    display: none;
+}
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
 }
