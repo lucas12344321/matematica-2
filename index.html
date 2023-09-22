@@ -30,10 +30,17 @@
             const swiper = new Swiper('.swiper', {
                 spaceBetween: 10,
                 slidesPerView: 3,
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "bullets",
+                },
             });
         </script>
         <div class=”swiper”>
             <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class=”swiper-pagination”></div>
+
             <div class=”swiper-wrapper”>
             <!-- Slides -->
             <div class=”swiper-slide”><img src=”img/ApacheKafkasvg”
@@ -49,7 +56,6 @@
             <div class=”swiper-button-prev”></div>
             <div class=”swiper-button-next”></div>
             <!-- If we need scrollbar -->
-            <div class=”swiper-scrollbar”></div>
             </div>
         <div class="container">
             <input type="checkbox" id="menu" class="container__butao">
@@ -86,6 +92,35 @@
         <h2 class="banner_titulo">Já sabe por onde começar?</h2>
         <p class="banner_texto">encontre em nossa estante o que precisa para o seu desenvolvimento!</p>
         <input type="search" class="banner_pesquisa" placeholder=”Qual será sua próxima leitura?”>>
+        <div class=”card”>
+            <div class=”card__descricao”>
+            <div class=”descricao”>
+            </div>
+            </div>
+            </div>
+            <div class=”descricao”>
+                <h3 class=”descricao_titulo”>Talvez você também se interesse por...</h3>
+                <h2 class=”descricao_titulo-livro”>Angular 11 e Firebase</h2>
+                <p class=”descricao__texto”>Construindo uma aplicação integrada com
+                a plataforma do Google.</p>
+                </div>
+                <img src=”img/Angular.svg” class=”descricao__imagem”>
+                <!-- Segunda coluna -->
+                <img src=”img/Angular.svg” class=”descricao__imagem”>
+
+            </div>
+            <!-- Segunda linha -->
+            <div class=”card__botoes”>
+                <!-- Primeira coluna -->
+                <ul class=”botoes”>
+                    <li class=”botoes__item”><img src=”img/Favoritos.svg”
+                         alt=”Favoritar livro”></li>
+                         
+                         <li class=”botoes__item”><img src=”img/Compras.svg”
+                            alt=”Adicionar no carrinho de compras”></li>
+                        </ul>
+                        <a href=”#” class=”botoes__ancora”>Saiba mais</a>
+                    </div>
     </section>
 </body>
 </html>
